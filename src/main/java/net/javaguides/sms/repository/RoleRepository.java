@@ -1,0 +1,8 @@
+package net.javaguides.sms.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import net.javaguides.sms.entity.Role;
+
+public interface RoleRepository extends JpaRepository<Role, Long> {
+    Role findByName(String name);
+}
